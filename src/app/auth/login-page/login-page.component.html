@@ -1,0 +1,56 @@
+<div class="body">
+
+  <div class="box">
+
+    <span class="borderLine"></span>
+
+    <div class="form">
+
+      <form (ngSubmit)="login()"
+            (keyup.enter) = "login()"
+      >
+
+        <h2>Sign in</h2>
+
+        <div class="inputBox">
+
+          <input
+          type="text"
+          name="email"
+          required="required"
+          [(ngModel)]="email"
+          autocomplete="username"
+          >
+
+          <span>Email</span>
+          <i></i>
+
+        </div>
+
+        <div class="inputBox">
+
+            <input
+            type="password"
+            name="password"
+            required="required"
+            [(ngModel)]="password"
+            autocomplete="current-password"
+            >
+            <span>Password</span>
+            <i></i>
+        </div>
+
+      </form>
+
+        <div class="links">
+          <a routerLink="/register">Sing up</a>
+        </div>
+
+
+        <button class="button" type="submit" (click)="login()">Login</button>
+
+      </div>
+
+  </div>
+
+</div>
