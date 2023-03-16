@@ -41,7 +41,6 @@ import { environment } from 'src/environments/environment';
 
     .row{
       width: 10cm;
-      margin-right: 500mm;
     }
 
   }
