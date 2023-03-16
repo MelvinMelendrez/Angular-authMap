@@ -24,6 +24,8 @@ import { environment } from 'src/environments/environment';
     display:flex;
     flex-direction:column;
     width: 11cm;
+
+
   }
 
   .lng-lat{
@@ -33,6 +35,15 @@ import { environment } from 'src/environments/environment';
   .numero{
     display:flex;
     justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .row{
+      width: 10cm;
+      margin-right: 500mm;
+    }
+
   }
     `
   ]
